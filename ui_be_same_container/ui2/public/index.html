@@ -4,7 +4,7 @@
     <title>Simple UI</title>
     <script>
         async function fetchUsers() {
-            const response = await fetch('/api/users');
+            const response = await fetch('http://localhost:7007/api/users');
             const users = await response.json();
             const userDiv = document.getElementById('users');
             userDiv.innerHTML = '';

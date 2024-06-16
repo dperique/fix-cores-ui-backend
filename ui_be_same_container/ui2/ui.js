@@ -1,4 +1,5 @@
 const express = require('express');
+const axios = require('axios');
 const app = express();
 const port = 7007;
 
@@ -7,14 +8,14 @@ app.use(express.static('public'));
 
 // Backend endpoint to get users
 app.get('/api/users', (req, res) => {
-  res.json([
-    { name: 'dennis' },
-    { name: 'jule' }
-  ]);
+    res.json([
+        { name: 'dennis' },
+        { name: 'jule' }
+    ]);
 });
 
 // Start the server
 app.listen(port, () => {
-  console.log(`App listening at http://localhost:${port}`);
+    console.log(`App listening at http://localhost:${port}`);
 });
 
