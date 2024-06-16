@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: cors-simple-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: cors-simple-app
+  template:
+    metadata:
+      labels:
+        app: cors-simple-app
+    spec:
+      containers:
+        - name: cors-ui2
+          image: docker.io/dperique/cors-ui2:latest
+          ports:
+            - containerPort: 7007
+
