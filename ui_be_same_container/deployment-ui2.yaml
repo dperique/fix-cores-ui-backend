@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: cors-simple-app
-          image: docker.io/dperique/cors-simple-app:latest
+          image: docker.io/dperique/cors-ui2:latest
           ports:
             - containerPort: 7007
 
