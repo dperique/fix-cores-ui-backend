@@ -41,6 +41,9 @@ could just allow a single one like this `origin: 'http://www.dennis.com'`.
 ├── public
 │   └── index.html
 └── ui.js
+├── other_examples
+│   ├── cores_backend.go
+│   └── cores_backend.py
 ```
 
 ## Prerequisites
@@ -265,3 +268,7 @@ Ensure all dependencies are installed.
 Verify that the kind cluster is running and the nodes are labeled correctly.
 Check the logs for any errors using kubectl logs <pod-name>.
 If you encounter any issues, feel free to open an issue on this repository.
+
+### Other examples
+
+There are two other examples in the [other_examples](./other_examples/) subdir for to and python.
